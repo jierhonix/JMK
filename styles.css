@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTSSSSS */
+.abel {font-family: "Abel", sans-serif;}
+.bzee {font-family: "ABeeZee", sans-serif;}
+.chivo {font-family: 'Archivo', sans-serif;}
+
+/* FONT SIZES */
+.fsize20 {font-size: 20px;}
+
+.lside {width: 175px;}
+.rside {width: 175px; text-align: end;}
+
+/* NAVBAR RESPONSE WHEN RESIZED*/
+@media screen and (max-width: 767px) {
+  .logo {
+    position: absolute;
+    opacity: 0;
+  }
+  .welcome {
+    font-size: 0;
+  }
+  .jmk {
+    width: 100px;
+    opacity: 100;
+  }
+  .lside {width: 90px;}
+  .rside {width: 90px;}
+}
+
+.login-head {
+  font-size: 20px;
+}
+.login-head span {
+  font-size: 12px;
+}
+
+form {
+  max-width: 320px;
+}
+form a {
+  text-decoration: none;
+}
+
+.login {
+  background-image: url("e\ commerce\ icon/schoolSupply.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+}
+
+/* LOGIN CONTAINER */
+.wrapper {
+  width: 350px;
+  height: 375px;
+  padding: 10px 0;
+  background-color: #0A042F;/*#0A042F*/
+  border-radius: 10px;
+}
+.wrapper .input-box {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 25px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 0 15px;
+  font-family: "Abel", sans-serif;
+}
+.input-box input::placeholder {
+  color: #080326;
+}
+
+.wrapper .login-field {
+  width: 100%;
+  height: 30px;
+  margin: 50px 0 25px 0;
+  background-color: #CF3333;
+  border-radius: 5px;
+}
+.wrapper input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.app-box {
+  width: 140px;
+  font-size: 12px;
+}
+.app-box img {
+  width: 25px;
+}
+.app {
+  border-radius: 5px;
+}
+.app-box .pad {
+  padding: 0 20px;
+}
+
+/*############# SHOP PAGE #############*/
+
+/* SHOP FEATURE */
+.shop-feature {
+  margin-top: 100px;
+}
+.shop-feature .shop-bg{
+  position: absolute;
+  top: 0;
+  right: 5%;
+  z-index: -1;
+}
+.carousel {
+  width: 50%;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0 2px 5px grey;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .shop-feature .shop-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+}
+
+.search-ctrl {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #0A042F;
+}
+.search-btn {
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border: none;
+  background-color: #0A042F;
+}
+
+/*##### CATEGORIES SECTION #####*/
+.categ-field {
+  padding: 50px 10%;
+}
+
+@media screen and (max-width: 1024px) {
+  .categ-field {
+    padding: 50 10%;
+    flex-direction: column;
+  }
+}
+.categ-bag {
+  background-image: url("e\ commerce\ icon/bag.png");
+  background-position: center;
+  background-size: 225px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.categ-bag:hover {
+  transform: scale(1.1);
+}
+.categ-paper {
+  background-image: url("e\ commerce\ icon/yellow pad.png");
+  background-position: center;
+  background-size: 225px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.categ-paper:hover {
+  transform: scale(1.1);
+}
+.categ-pen {
+  background-image: url("e\ commerce\ icon/ballpen.png");
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.categ-pen:hover {
+  transform: scale(1.1);
+}
+
+.categ-name {
+  padding-right: 25%;
+  font-size: 14px;
+}
+/*##### PRODUCT SECTION #####*/
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  padding: 50px 10%;
+}
+
+.product-img-1 {
+  background-image: url("e\ commerce\ icon/aqua.png");
+  background-position: center;
+  background-size: 225px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-1:hover {
+  transform: scale(1.1);
+}
+
+.product-img-2 {
+  background-image: url("e\ commerce\ icon/rectangle_bag.png");
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-2:hover {
+  transform: scale(1.1);
+}
+
+.product-img-3 {
+  background-image: url("e\ commerce\ icon/nb4.png");
+  background-position: center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-3:hover {
+  transform: scale(1.1);
+}
+
+.product-img-4 {
+  background-image: url("e\ commerce\ icon/crayola.png");
+  background-position: center;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-4:hover {
+  transform: scale(1.1);
+}
+
+.product-img-5 {
+  background-image: url("e\ commerce\ icon/ruler.png");
+  background-position: center;
+  background-size: 175px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-5:hover {
+  transform: scale(1.1);
+}
+
+.product-img-6 {
+  background-image: url("e\ commerce\ icon/pencil_set.png");
+  background-position: center;
+  background-size: 275px;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.product-img-6:hover {
+  transform: scale(1.1);
+}
+
+/*########## WISHLIST PAGE ##########*/
+#wishlist-section {
+  padding: 50px 0;
+}
+
+.wish-box {
+  height: 150px;
+  box-shadow: 0 2px 5px grey;
+  transition: all 0.5s;
+}
+.wish-box:hover {
+  transform: scale(1.025);
+}
+
+.wish-img-1 {
+  background-image: url("e\ commerce\ icon/bag3.png");
+  background-repeat: no-repeat;
+  background-size: 140px;
+  background-position: center;
+}
+
+.wish-img-2 {
+  background-image: url("e\ commerce\ icon/yellow pad.png");
+  background-repeat: no-repeat;
+  background-size: 140px;
+  background-position: center;
+}
+.wish-img-3 {
+  background-image: url("e\ commerce\ icon/rectangle_bag.png");
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .fz-15 {
+    font-size: 11px;
+  }
+}
+
+/*########## REVIEW PAGE ##########*/
+#review-section {
+  padding: 100px 0;
+}
+.review-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-gallery {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .review-gallery {
+    width: 100%;
+  }
+  .review-gallery img{
+    width: 100%;
+  }
+  #review-section {
+    padding: 0 0 100px 0;
+  }
+}
+
+.review-text-box {
+  padding: 10px;
+  width: 350px;
+  box-shadow: 0 2px 5px grey;
+  font-size: 12px;
+}
+.review-text-box button {
+  border: 1px solid grey;
+  margin: 0 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.review-table .right-line {
+  border-right: 2px solid black;
+}
+.review-table th {
+  padding: 0 10px;
+}
+
+.about-box {
+  box-shadow: 0 2px 5px grey;
+  width: 100%;
+  max-width: 400px;
+}
+.about-box p {
+  font-size: 12px;
+}
+
+#rating-section {
+  padding-bottom: 100px;
+}
+
+.ratecords p {
+  background-color: white;
+  padding: 0 5px;
+  height: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.ratecords2 p {
+  background-color: white;
+  padding: 0 5px;
+  height: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/*########## ADD TO CART PAGE ##########*/
+#add-to-cat-section {
+  padding: 100px 0;
+}
+
+
+
+
+/*##### Extra hehehe #####*/
+.btn-small {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.no-style {
+  text-decoration: none !important;
+  color: black;
+}
+.d-shadow {
+  box-shadow: 0 2px 5px grey;
+}
+.pl-25 {
+  padding-left: 25%;
+}
+.fz-15 {
+  font-size: 15px;
+}
+.fz-13 {
+  font-size: 13px;
+}
